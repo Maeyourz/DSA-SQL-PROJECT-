@@ -15,4 +15,16 @@ This project focuses on analyzing the sales performance of Kulta Mega Stores wit
 9. Which consumer customer was the most profitable one?
 10. Which customer returned items, and what segment do they belong to?
 11. If the delivery truck is the most economical but the slowest shipping method and Express Air is the fastest but the most expensive one, do you think the company appropriately spent shipping costs based on the Order Priority?
-#
+
+# TOOLS USED FOR THIS ANALYSIS
+The primary tool used for this analysis is Microsoft SQL Server Management Studio (SSMS), which can be downloaded via the following link: (https://learn.microsoft.com/en-us/ssms/install/install)
+# DATA SOURCE
+The dataset used in this project was sourced from the Digital SkillUp Africa (DSA) Learning Management System as part of the final project requirement.
+
+# ETL PROCESS
+
+## Data Extraction
+As mentioned earlier, the data was extracted from the Digital SkillUp Africa Learning Management System.
+## Data Transformation & Loading
+Data transformation was carried out in SQL Server. This included correcting data types—for instance, converting date fields stored as strings back to proper date formats and changing the Order_ID column from Smallint to Int to accommodate larger volumes. Additionally, missing values in the Profit_Base_Margin, Profit, and Unit_Price columns were handled using SQL queries to ensure data completeness and consistency.
+
