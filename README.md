@@ -3,7 +3,7 @@
 Kultra Mega Stores (KMS), headquartered in Lagos, specialises in office supplies and furniture. Its customer base includes individual consumers, small businesses (retail), and large corporate clients (wholesale) across Lagos, Nigeria.
 # ANALYSIS OVERVIEW
 This project focuses on analyzing the sales performance of Kulta Mega Stores within the Abuja Division, with the goal of uncovering key insights, findings, and actionable recommendations to support informed business decisions. The analysis was conducted using two datasets: KMS SQL Case Study and Order_Status. The KMS SQL Case Study dataset includes comprehensive details on customers, products, shipping methods, and more, while the Order_Status dataset provides information on customers who returned orders, including order statuses and corresponding IDs.
-## AREA OF CONCENTRATION INCLUDES
+## KEY QUESTOIN OF CONCENTRATION INCLUDES
 1. Which product category had the highest sales?
 2. What are the Top 3 and Bottom 3 regions in terms of sales?
 3. What were the total sales of appliances in Ontario?
@@ -27,4 +27,25 @@ The dataset used in this project was sourced from the Digital SkillUp Africa (DS
 As mentioned earlier, the data was extracted from the Digital SkillUp Africa Learning Management System.
 ## Data Transformation & Loading
 Data transformation was carried out in SQL Server. This included correcting data types—for instance, converting date fields stored as strings back to proper date formats and changing the Order_ID column from Smallint to Int to accommodate larger volumes. Additionally, missing values in the Profit_Base_Margin, Profit, and Unit_Price columns were handled using SQL queries to ensure data completeness and consistency.
+# Checking for null values in "PROFIT, PRODUCT BASE MARGIN and UNIT PRICE COLUMNS"
+              select * from [KMS Sql Case Study]
+              Where Product_Base_Margin Is NULL Or Profit is NULL Or
+              Unit_Price is NULL
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
