@@ -3,7 +3,7 @@
 Kultra Mega Stores (KMS), headquartered in Lagos, specialises in office supplies and furniture. Its customer base includes individual consumers, small businesses (retail), and large corporate clients (wholesale) across Lagos, Nigeria.
 # ANALYSIS OVERVIEW
 This project focuses on analyzing the sales performance of Kulta Mega Stores within the Abuja Division, with the goal of uncovering key insights, findings, and actionable recommendations to support informed business decisions. The analysis was conducted using two datasets: KMS SQL Case Study and Order_Status. The KMS SQL Case Study dataset includes comprehensive details on customers, products, shipping methods, and more, while the Order_Status dataset provides information on customers who returned orders, including order statuses and corresponding IDs.
-## KEY QUESTOIN OF CONCENTRATION INCLUDES
+## KEY QUESTION OF CONCENTRATION INCLUDES
 1. Which product category had the highest sales?
 2. What are the Top 3 and Bottom 3 regions in terms of sales?
 3. What were the total sales of appliances in Ontario?
@@ -83,7 +83,7 @@ where Product_Category = 'Appliances'
 And Region = 'Ontario'
 
 # 4.0 Determining the bottom 10 customers by Sales
-<img width="1243" height="648" alt="Image" src="https://github.com/user-attachments/assets/2de2d8b9-ead3-462b-8722-ee565923ba9a" />
+<img width="1170" height="898" alt="Image" src="https://github.com/user-attachments/assets/2da4a6a9-3c3b-4f14-8a18-c8df25d7eabc" />
 
 SELECT Top 10 customer_name, SUM(sales) AS total_sales
 FROM [KMS Sql Case Study]
@@ -91,6 +91,7 @@ GROUP BY customer_name
 ORDER BY total_sales ASC
 
 # 5.0 Determining the Highest shipping cost in a particular shipping method
+<img width="1470" height="822" alt="Image" src="https://github.com/user-attachments/assets/5c9795f6-73b0-40e7-b77f-f95832a82d25" />
  Top 1 highest shpping cost by shipping method
  
 Select Top 1 Ship_Mode, Shipping_Cost
