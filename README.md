@@ -65,7 +65,8 @@ From [KMS Sql Case Study]
 Group By Product_Category
 Order By TotalSales Desc
 
-# 2.1 Finding the TOP 3 and BOTTOM 3 Region in Terms of Sales
+# 2.0 Finding the TOP 3 and BOTTOM 3 Region in Terms of Sales
+
 <img width="1482" height="863" alt="Image" src="https://github.com/user-attachments/assets/df6507c2-099b-4495-a987-736ff5d0b579" />
 
 ----Top 3 Region by Sales----
@@ -74,30 +75,34 @@ From [KMS Sql Case Study]
 Group By Region
 Order By TotalSales Desc
 
-# 2.2 Bottom 3 Region by Sales
-<img width="1509" height="783" alt="Image" src="https://github.com/user-attachments/assets/df8dcfd2-436d-4383-98b3-9c669d84ba80" />
+# 2.1 Bottom 3 Region by Sales
+bottom 3
+
+<img width="1470" height="822" alt="Image" src="https://github.com/user-attachments/assets/1b5f1373-a033-4bfb-b4e0-b8804e584ef0" />
+
 Select top 3 Region, Sum(Sales) As TotalSales
 From [KMS Sql Case Study]
 Group By Region
 Order By TotalSales Asc
 
 # 3.0 Determining the Total sales of appliances in Ontario
-<img width="1470" height="822" alt="Image" src="https://github.com/user-attachments/assets/1b5f1373-a033-4bfb-b4e0-b8804e584ef0" />
 Select Sum(Sales) As TotalSales
 From [KMS Sql Case Study]
 where Product_Category = 'Appliances'
 And Region = 'Ontario'
 
 # 4.0 Determining the bottom 10 customers by Sales
-<img width="1243" height="648" alt="Image" src="https://github.com/user-attachments/assets/2de2d8b9-ead3-462b-8722-ee565923ba9a" />
 
+<img width="1529" height="798" alt="Image" src="https://github.com/user-attachments/assets/a5a53216-4124-435d-8cfb-ea4d5f07da1b" />
 SELECT Top 10 customer_name, SUM(sales) AS total_sales
 FROM [KMS Sql Case Study]
 GROUP BY customer_name
 ORDER BY total_sales ASC
 
 # 5.0 Determining the Highest shipping cost in a particular shipping method
-<img width="1529" height="798" alt="Image" src="https://github.com/user-attachments/assets/a5a53216-4124-435d-8cfb-ea4d5f07da1b" />
+<img width="1243" height="648" alt="Image" src="https://github.com/user-attachments/assets/2de2d8b9-ead3-462b-8722-ee565923ba9a" />
+
+
 Select Ship_Mode, Shipping_Cost
 From [KMS Sql Case Study]
 Order by Shipping_Cost Desc
